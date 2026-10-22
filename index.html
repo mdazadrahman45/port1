@@ -1,0 +1,945 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description"
+    content="Portfolio of Md Azad Rahman, Full Stack Developer." />
+
+  <title>Md Azad Rahman | Full Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect"
+    href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="progress-track">
+    <div id="scrollProgress"></div>
+  </div>
+
+  <!-- Background Glows -->
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header" id="siteHeader">
+
+    <div
+      class="site-nav max-w-[1180px] mx-auto px-5 sm:px-8 flex items-center justify-between"
+    >
+
+      <a href="#home" class="logo">
+        <span class="logo-mark">
+          A<span class="logo-dot">.</span>
+        </span>
+
+        <span>
+          azad<span class="logo-light">/dev</span>
+        </span>
+      </a>
+
+      <nav class="desktop-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#journey" class="nav-link">Journey</a>
+      </nav>
+
+      <a href="#contact" class="nav-contact">
+        Let's talk <span>↗</span>
+      </a>
+
+      <button
+        class="mobile-toggle"
+        id="menuButton"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section
+      id="home"
+      class="hero max-w-[1180px] mx-auto px-5 sm:px-8 grid lg:grid-cols-2 items-center gap-12"
+    >
+
+      <div class="hero-copy">
+
+        <div class="eyebrow hero-intro">
+          <span class="availability-dot"></span>
+          FULL STACK DEVELOPER
+          <span class="eyebrow-stroke"></span>
+          PORTFOLIO '26
+        </div>
+
+        <h1 class="hero-title hero-intro">
+          Hey, I'm
+          <span class="gradient-name">Azad.</span>
+          <br />
+
+          I turn ideas into
+
+          <span class="underlined-word">
+            experiences.
+
+            <svg
+              viewBox="0 0 360 18"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 12 C92 1, 236 2, 354 11"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+        </h1>
+
+        <p class="hero-description hero-intro">
+          I'm <strong>Md Azad Rahman</strong>, a Full Stack
+          Developer passionate about building responsive
+          interfaces, powerful web applications and
+          meaningful digital experiences.
+        </p>
+
+        <div
+          class="hero-actions hero-intro flex flex-wrap items-center gap-3"
+        >
+
+          <a href="#projects" class="btn btn-primary">
+            Explore My Work
+            <span>↗</span>
+          </a>
+
+          <a
+            href="assets/MdAzadRahman45.pdf"
+            download
+            class="btn btn-outline"
+          >
+            Download Resume
+            <span>↓</span>
+          </a>
+
+        </div>
+
+        <div class="hero-bottom hero-intro">
+          <span class="scroll-icon">↓</span>
+          <span>SCROLL TO EXPLORE</span>
+          <span class="hero-bottom-line"></span>
+          <span>01 / 06</span>
+        </div>
+
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-stage" id="heroStage">
+
+        <div class="stage-grid"></div>
+        <div class="stage-halo"></div>
+
+        <span class="floating-pill pill-top">
+          ✦ Creative Thinker
+        </span>
+
+        <div class="profile-orbit orbit-outer">
+
+          <div class="profile-orbit orbit-inner">
+
+            <div class="profile-monogram">
+              AR<span>.</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Animated Code Editor -->
+        <div class="code-window">
+
+          <div class="window-top">
+
+            <span class="window-dots">
+              <i></i><i></i><i></i>
+            </span>
+
+            <span>developer.js</span>
+            <span>⌘</span>
+
+          </div>
+
+          <div class="code-body">
+
+            <span class="code-comment">
+              // Nice to meet you 👋
+            </span>
+
+            <br />
+
+            <span class="code-purple">const</span>
+            developer = {
+
+            <br />
+
+            &nbsp;&nbsp;name:
+            <span class="code-green">'Azad Rahman'</span>,
+
+            <br />
+
+            &nbsp;&nbsp;role:
+            <span class="code-green">'Full Stack Dev'</span>,
+
+            <br />
+
+            &nbsp;&nbsp;passion:
+            <span class="code-green">'Building things'</span>
+
+            <br />
+
+            };
+
+            <span class="code-cursor">▍</span>
+
+          </div>
+
+          <div class="window-footer">
+            <span class="tiny-dot"></span>
+            Always learning, always building
+            <span>↗</span>
+          </div>
+
+        </div>
+
+        <span class="floating-pill pill-bottom">
+          <span class="sparkle">✳</span>
+          MERN Stack
+        </span>
+
+        <span class="stage-asterisk">✳</span>
+
+      </div>
+
+    </section>
+
+    <!-- ================= MOVING SKILLS BAR ================= -->
+    <div class="ticker">
+
+      <div class="ticker-inner">
+
+        <span>HTML5</span><b>✳</b>
+        <span>CSS3</span><b>✳</b>
+        <span>JAVASCRIPT</span><b>✳</b>
+        <span>REACT.JS</span><b>✳</b>
+        <span>NODE.JS</span><b>✳</b>
+        <span>MONGODB</span><b>✳</b>
+
+        <span>HTML5</span><b>✳</b>
+        <span>CSS3</span><b>✳</b>
+        <span>JAVASCRIPT</span><b>✳</b>
+        <span>REACT.JS</span><b>✳</b>
+        <span>NODE.JS</span><b>✳</b>
+        <span>MONGODB</span><b>✳</b>
+
+      </div>
+
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <section
+      id="about"
+      class="section-space max-w-[1180px] mx-auto px-5 sm:px-8"
+    >
+
+      <div class="section-heading reveal">
+
+        <div class="section-label">
+          <span>01</span> / ABOUT ME
+        </div>
+
+        <h2>
+          Curious mind.
+          <br />
+          <span class="muted-heading">Builder at heart.</span>
+        </h2>
+
+      </div>
+
+      <div
+        class="about-layout grid lg:grid-cols-[0.9fr_1.1fr] gap-10 lg:gap-18 items-start"
+      >
+
+        <div class="about-art reveal">
+
+          <div class="about-art-inner">
+
+            <span class="about-small-label">
+              GET TO KNOW ME
+            </span>
+
+            <div class="about-big-letter">
+              A<span>✳</span>
+            </div>
+
+            <span class="about-art-footer">
+              CODE / CREATE / IMPROVE
+              <span>↗</span>
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="about-copy reveal">
+
+          <h3>
+            More than just code — I love creating
+            things that <em>make sense.</em>
+          </h3>
+
+          <p>
+            I'm a Computer Science graduate from
+            Radharaman Engineering College, Bhopal.
+            I enjoy developing responsive web applications
+            using modern frontend and backend technologies.
+          </p>
+
+          <p>
+            I have knowledge of React.js, Node.js,
+            Express.js, MongoDB, JavaScript and SQL.
+            I enjoy building RESTful APIs, solving
+            problems and writing clean, maintainable code.
+          </p>
+
+          <p>
+            I have also pursued MERN Stack training at
+            Cybrom Technology to strengthen my practical
+            web development skills.
+          </p>
+
+          <div class="about-facts grid grid-cols-2 gap-4">
+
+            <div>
+              <strong>2026</strong>
+              <span>B.Tech Graduate</span>
+            </div>
+
+            <div>
+              <strong>MERN</strong>
+              <span>Stack Training</span>
+            </div>
+
+            <div>
+              <strong>6.93</strong>
+              <span>CGPA</span>
+            </div>
+
+            <div>
+              <strong>03</strong>
+              <span>Projects</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="skills-section section-space">
+
+      <div class="max-w-[1180px] mx-auto px-5 sm:px-8">
+
+        <div class="section-top reveal">
+
+          <div>
+            <div class="section-label">
+              <span>02</span> / MY TOOLKIT
+            </div>
+
+            <h2>
+              Tools I use to
+              <span class="accent-text">build.</span>
+            </h2>
+          </div>
+
+          <p>
+            Technologies I use for frontend,
+            backend and problem-solving.
+          </p>
+
+        </div>
+
+        <div
+          class="skills-grid grid md:grid-cols-2 lg:grid-cols-4 gap-4"
+        >
+
+          <!-- Frontend -->
+          <article class="skill-card reveal">
+
+            <span class="skill-icon">&lt;/&gt;</span>
+            <span class="skill-index">01 /</span>
+
+            <h3>Frontend</h3>
+
+            <p>
+              Building modern and responsive interfaces.
+            </p>
+
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React.js</span>
+              <span>Tailwind CSS</span>
+              <span>Bootstrap</span>
+            </div>
+
+          </article>
+
+          <!-- Backend -->
+          <article class="skill-card reveal">
+
+            <span class="skill-icon">{ }</span>
+            <span class="skill-index">02 /</span>
+
+            <h3>Backend</h3>
+
+            <p>
+              Developing APIs and application logic.
+            </p>
+
+            <div class="skill-tags">
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>REST APIs</span>
+            </div>
+
+          </article>
+
+          <!-- Databases -->
+          <article class="skill-card reveal">
+
+            <span class="skill-icon">▤</span>
+            <span class="skill-index">03 /</span>
+
+            <h3>Database & Code</h3>
+
+            <p>
+              Working with data and solving problems.
+            </p>
+
+            <div class="skill-tags">
+              <span>MongoDB</span>
+              <span>MySQL</span>
+              <span>SQL</span>
+              <span>Java</span>
+            </div>
+
+          </article>
+
+          <!-- Tools -->
+          <article class="skill-card reveal">
+
+            <span class="skill-icon">✳</span>
+            <span class="skill-index">04 /</span>
+
+            <h3>Tools</h3>
+
+            <p>
+              Tools that make development efficient.
+            </p>
+
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>Postman</span>
+              <span>Figma</span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section
+      id="projects"
+      class="section-space max-w-[1180px] mx-auto px-5 sm:px-8"
+    >
+
+      <div class="section-top reveal">
+
+        <div>
+          <div class="section-label">
+            <span>03</span> / SELECTED WORK
+          </div>
+
+          <h2>
+            Projects made with
+            <span class="accent-text">purpose.</span>
+          </h2>
+        </div>
+
+        <p>
+          A selection of my development projects,
+          from utilities to e-commerce and travel.
+        </p>
+
+      </div>
+
+      <!-- PROJECT 01: CALCULATOR -->
+      <div
+        class="featured-project reveal grid lg:grid-cols-[1.2fr_0.8fr] gap-0"
+      >
+
+        <div class="featured-image">
+
+          <img
+            src="img1.png"
+            alt="Responsive Calculator App preview"
+            loading="lazy"
+          />
+
+          <span class="project-corner-tag">
+            PROJECT / 01
+          </span>
+
+        </div>
+
+        <div class="featured-detail">
+
+          <span class="project-type">
+            WEB APPLICATION • FRONTEND
+          </span>
+
+          <h3>
+            Responsive
+            <br />
+            Calculator App
+          </h3>
+
+          <p>
+            A fully responsive calculator with
+            a modern interface, mathematical
+            operations, real-time display updates,
+            keyboard support and smooth interactions.
+          </p>
+
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <span class="project-soon">
+            Live Demo Link Coming Soon
+            <span>↗</span>
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- PROJECTS 02 AND 03 -->
+      <div
+        class="upcoming-projects grid md:grid-cols-2 gap-5 mt-5"
+      >
+
+        <!-- PROJECT 02: BOOKSTORE -->
+        <article class="upcoming-card project-card reveal">
+
+          <a
+            class="upcoming-art project-cover"
+            href="https://e-commerce-react-nine-liard.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="img2.jpg"
+              alt="OldBookStore website preview"
+              loading="lazy"
+            />
+
+            <span class="preview-number">
+              02 / LIVE PROJECT
+            </span>
+
+            <span class="project-open-icon">↗</span>
+
+          </a>
+
+          <div class="upcoming-detail">
+
+            <span>E-COMMERCE • WEB APP</span>
+
+            <h3>OldBookStore</h3>
+
+            <p>
+              An online bookstore website featuring
+              book browsing, wishlist options
+              and shopping-focused user interfaces.
+            </p>
+
+            <div class="project-tags">
+              <span>E-Commerce</span>
+              <span>Bookstore</span>
+              <span>Responsive UI</span>
+            </div>
+
+            <a
+              class="project-demo-link"
+              href="https://e-commerce-react-nine-liard.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Live Project
+              <span>↗</span>
+            </a>
+
+          </div>
+
+        </article>
+
+        <!-- PROJECT 03: HOTEL BOOKING -->
+        <article class="upcoming-card project-card reveal">
+
+          <a
+            class="upcoming-art project-cover"
+            href="https://hotel-booking-phi-silk.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="img3.jpg"
+              alt="LuxeStay Hotel Booking preview"
+              loading="lazy"
+            />
+
+            <span class="preview-number">
+              03 / LIVE PROJECT
+            </span>
+
+            <span class="project-open-icon">↗</span>
+
+          </a>
+
+          <div class="upcoming-detail">
+
+            <span>HOTEL BOOKING • WEB APP</span>
+
+            <h3>LuxeStay — Hotel Booking</h3>
+
+            <p>
+              A hotel booking website for exploring
+              stays and searching for hotels
+              through a responsive booking interface.
+            </p>
+
+            <div class="project-tags">
+              <span>Hotel Booking</span>
+              <span>Travel</span>
+              <span>Web App</span>
+            </div>
+
+            <a
+              class="project-demo-link"
+              href="https://hotel-booking-phi-silk.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Live Project
+              <span>↗</span>
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="journey" class="journey-section section-space">
+
+      <div class="max-w-[1180px] mx-auto px-5 sm:px-8">
+
+        <div class="section-top reveal">
+
+          <div>
+            <div class="section-label">
+              <span>04</span> / EDUCATION & LEARNING
+            </div>
+
+            <h2>
+              My learning
+              <span class="accent-text">journey.</span>
+            </h2>
+          </div>
+
+          <p>
+            My education, professional training
+            and certifications.
+          </p>
+
+        </div>
+
+        <div class="journey-grid grid lg:grid-cols-3 gap-4">
+
+          <!-- Education -->
+          <article class="journey-card reveal">
+
+            <div class="journey-top">
+              <span class="journey-icon">🎓</span>
+              <span class="journey-year">2022 — 2026</span>
+            </div>
+
+            <span class="journey-category">
+              EDUCATION
+            </span>
+
+            <h3>B.Tech in Computer Science</h3>
+
+            <p>
+              Radharaman Engineering College,
+              Bhopal
+            </p>
+
+            <div class="journey-foot">
+              CGPA: 6.93
+            </div>
+
+          </article>
+
+          <!-- MERN Training -->
+          <article class="journey-card reveal">
+
+            <div class="journey-top">
+              <span class="journey-icon">✳</span>
+              <span class="journey-year">TRAINING</span>
+            </div>
+
+            <span class="journey-category">
+              PROFESSIONAL LEARNING
+            </span>
+
+            <h3>MERN Stack Training</h3>
+
+            <p>
+              Cybrom Technology
+            </p>
+
+            <div class="journey-foot">
+              MongoDB · Express · React · Node
+            </div>
+
+          </article>
+
+          <!-- Certifications -->
+          <article class="journey-card reveal">
+
+            <div class="journey-top">
+              <span class="journey-icon">✧</span>
+              <span class="journey-year">CERTIFIED</span>
+            </div>
+
+            <span class="journey-category">
+              CERTIFICATIONS
+            </span>
+
+            <h3>Certifications & Learning</h3>
+
+            <p>
+              React.js Certification — Cybrom
+              Technology Pvt. Ltd. (2026)
+
+              <br /><br />
+
+              Data Structures and Algorithms
+              with Java — Apna College
+            </p>
+
+            <div class="journey-foot">
+              Learning and improving every day
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section
+      id="contact"
+      class="contact-section max-w-[1180px] mx-auto px-5 sm:px-8"
+    >
+
+      <div class="contact-panel reveal">
+
+        <div class="contact-glow"></div>
+
+        <div class="contact-content">
+
+          <div class="section-label section-label-light">
+            <span>05</span> / GET IN TOUCH
+          </div>
+
+          <span class="contact-star">✳</span>
+
+          <h2>
+            Have an idea?
+            <br />
+            <span>Let's make it real.</span>
+          </h2>
+
+          <p>
+            I'm open to development opportunities,
+            collaborations, meaningful projects
+            and interesting conversations.
+          </p>
+
+          <div
+            class="contact-actions flex flex-wrap items-center gap-3"
+          >
+
+            <a
+              href="mailto:mdazad0208@gmail.com?subject=Let's%20connect"
+              class="btn contact-button"
+            >
+              Say Hello
+              <span>↗</span>
+            </a>
+
+            <a
+              href="tel:+919264136011"
+              class="contact-phone"
+            >
+              +91 92641 36011
+            </a>
+
+          </div>
+
+          <div class="contact-email">
+            mdazad0208@gmail.com
+          </div>
+
+        </div>
+
+        <span class="contact-large-mark">A.</span>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer max-w-[1180px] mx-auto px-5 sm:px-8">
+
+    <div class="footer-main">
+
+      <a class="logo" href="#home">
+
+        <span class="logo-mark">
+          A<span class="logo-dot">.</span>
+        </span>
+
+        <span>
+          azad<span class="logo-light">/dev</span>
+        </span>
+
+      </a>
+
+      <p>
+        Making the web a little more thoughtful.
+      </p>
+
+      <a href="#home" class="back-to-top">
+        Back to top ↑
+      </a>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span id="year"></span>
+        Md Azad Rahman. All rights reserved.
+      </span>
+
+      <span>
+        Built with HTML, Tailwind & JavaScript
+        <span class="footer-heart">♥</span>
+      </span>
+
+    </div>
+
+  </footer>
+
+  <!-- GSAP -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"
+    defer
+  ></script>
+
+  <!-- Custom JS -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
